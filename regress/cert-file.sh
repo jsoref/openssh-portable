@@ -138,7 +138,7 @@ fi
 
 # try ssh with the agent and certificates
 opts="-F $OBJ/ssh_proxy"
-# with no certificates, shoud fail
+# with no certificates, should fail
 ${SSH} $opts somehost exit 52
 if [ $? -eq 52 ]; then
 	fail "ssh connect with agent in succeeded with no cert"
