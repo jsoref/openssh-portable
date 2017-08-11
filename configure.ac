@@ -2674,7 +2674,7 @@ if test "x$openssl" = "xyes" ; then
 		],
 		[
 			AC_MSG_RESULT([no])
-			unsupported_algorithms="$unsupported_cipers \
+			unsupported_algorithms="$unsupported_ciphers \
 			   aes128-gcm@openssh.com \
 			   aes256-gcm@openssh.com"
 		]
