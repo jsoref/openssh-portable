@@ -52,7 +52,7 @@ echo "cert-authority $(cat $OBJ/user_ca_key1.pub)" > $OBJ/authorized_keys_$USER
 cat $OBJ/ssh_proxy | grep -v IdentityFile > $OBJ/no_identity_config
 
 # XXX: verify that certificate used was what we expect. Needs exposure of
-# keys via enviornment variable or similar.
+# keys via environment variable or similar.
 
 	# Key with no .pub should work - finding the equivalent *-cert.pub.
 verbose "identity cert with no plain public file"
