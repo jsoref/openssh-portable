@@ -426,7 +426,7 @@ fi
 - Add new ssh-keysign program and remove setuid from ssh client
 
 * Fri May 10 2002 Damien Miller <djm@mindrot.org>
-- Merge in spec changes from RedHat, reorgansie a little
+- Merge in spec changes from RedHat, reorganize a little
 - Add Privsep user, group and directory
 
 * Thu Mar  7 2002 Nalin Dahyabhai <nalin@redhat.com> 3.1p1-2
