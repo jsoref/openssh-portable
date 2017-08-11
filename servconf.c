@@ -1774,7 +1774,7 @@ process_server_config_line(ServerOptions *options, char *line,
 	case sAuthenticationMethods:
 		if (options->num_auth_methods == 0) {
 			value = 0; /* seen "any" pseudo-method */
-			value2 = 0; /* sucessfully parsed any method */
+			value2 = 0; /* successfully parsed any method */
 			while ((arg = strdelim(&cp)) && *arg != '\0') {
 				if (options->num_auth_methods >=
 				    MAX_AUTH_METHODS)
