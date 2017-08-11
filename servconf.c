@@ -1958,7 +1958,7 @@ int server_match_spec_complete(struct connection_info *ci)
  *
  * If the preauth flag is set, we do not bother copying the string or
  * array values that are not used pre-authentication, because any that we
- * do use must be explictly sent in mm_getpwnamallow().
+ * do use must be explicitly sent in mm_getpwnamallow().
  */
 void
 copy_set_server_options(ServerOptions *dst, ServerOptions *src, int preauth)
