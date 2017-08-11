@@ -58,7 +58,7 @@ for d in L R; do
 		    -oExitOnForwardFailure=yes somehost true
 		r=$?
 		if [ $r != 255 ]; then
-			fail "connection not termintated, but should ($r)"
+			fail "connection not terminated, but should ($r)"
 		fi
 	fi
 done
