@@ -1838,7 +1838,7 @@ complete_cmd_parse(EditLine *el, char *cmd, int lastarg, char quote,
 		return 0;
 	}
 
-	/* Complete ambigious command */
+	/* Complete ambiguous command */
 	tmp = complete_ambiguous(cmd, list, count);
 	if (count > 1)
 		complete_display(list, 0);
