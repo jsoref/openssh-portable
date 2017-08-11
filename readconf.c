@@ -2307,7 +2307,7 @@ parse_jump(const char *s, Options *o, int active)
 	return ret;
 }
 
-/* XXX the following is a near-vebatim copy from servconf.c; refactor */
+/* XXX the following is a near-verbatim copy from servconf.c; refactor */
 static const char *
 fmt_multistate_int(int val, const struct multistate *m)
 {
