@@ -685,7 +685,7 @@ main() { if (NSVersionOfRunTimeLibrary("System") >= (60 << 16))
 	PATH="$PATH:/usr/etc"
 	AC_DEFINE([WITH_IRIX_ARRAY], [1],
 		[Define if you have/want arrays
-		(cluster-wide session managment, not C arrays)])
+		(cluster-wide session management, not C arrays)])
 	AC_DEFINE([WITH_IRIX_PROJECT], [1],
 		[Define if you want IRIX project management])
 	AC_DEFINE([WITH_IRIX_AUDIT], [1],
