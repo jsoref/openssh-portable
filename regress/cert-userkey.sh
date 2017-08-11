@@ -218,7 +218,7 @@ basic_tests() {
 			${SSH} -i $OBJ/cert_user_key_${ktype} \
 			    -F $OBJ/ssh_proxy somehost true >/dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				fail "ssh cert connect succeeded unexpecedly"
+				fail "ssh cert connect succeeded unexpectedly"
 			fi
 			verbose "$tid: ${_prefix} revoked via KRL"
 			rm $OBJ/cert_user_key_revoked
@@ -227,7 +227,7 @@ basic_tests() {
 			${SSH} -i $OBJ/cert_user_key_${ktype} \
 			    -F $OBJ/ssh_proxy somehost true >/dev/null 2>&1
 			if [ $? -eq 0 ]; then
-				fail "ssh cert connect succeeded unexpecedly"
+				fail "ssh cert connect succeeded unexpectedly"
 			fi
 			verbose "$tid: ${_prefix} empty KRL"
 			${SSHKEYGEN} -kqf $OBJ/cert_user_key_revoked
@@ -249,7 +249,7 @@ basic_tests() {
 		${SSH} -i $OBJ/cert_user_key_${ktype} -F $OBJ/ssh_proxy \
 		    somehost true >/dev/null 2>&1
 		if [ $? -eq 0 ]; then
-			fail "ssh cert connect succeeded unexpecedly"
+			fail "ssh cert connect succeeded unexpectedly"
 		fi
 	done
 
