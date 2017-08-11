@@ -303,7 +303,7 @@ getopt_internal(int nargc, char * const *nargv, const char *options,
 
 	/*
 	 * XXX Some GNU programs (like cvs) set optind to 0 instead of
-	 * XXX using optreset.  Work around this braindamage.
+	 * XXX using optreset.  Work around this brain damage.
 	 */
 	if (optind == 0)
 		optind = optreset = 1;
