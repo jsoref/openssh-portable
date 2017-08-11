@@ -65,7 +65,7 @@
 /* #define AES_IMPLEMENTAION   1  1 = OpenSSL, 2 = Barreto, 3 = Gladman   */
 /* #define SSE2                0  Is SSE2 is available?                   */
 /* #define RUN_TESTS           0  Run basic correctness/speed tests       */
-/* #define UMAC_AE_SUPPORT     0  Enable auhthenticated encrytion         */
+/* #define UMAC_AE_SUPPORT     0  Enable authenticated encrytion         */
 
 /* ---------------------------------------------------------------------- */
 /* -- Global Includes --------------------------------------------------- */
