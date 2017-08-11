@@ -988,7 +988,7 @@ utmp_write_entry(struct logininfo *li)
 /* not much point if we don't want utmpx entries */
 #ifdef USE_UTMPX
 
-/* if we have the wherewithall, use pututxline etc. */
+/* if we have the wherewithal, use pututxline etc. */
 # if !defined(DISABLE_PUTUTXLINE) && defined(HAVE_SETUTXENT) && \
 	defined(HAVE_PUTUTXLINE)
 #  define UTMPX_USE_LIBRARY
