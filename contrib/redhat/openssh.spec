@@ -571,7 +571,7 @@ fi
   races in condrestart
 
 * Mon Apr  2 2001 Nalin Dahyabhai <nalin@redhat.com>
-- mention that challengereponse supports PAM, so disabling password doesn't
+- mention that challengeresponse supports PAM, so disabling password doesn't
   limit users to pubkey and rsa auth (#34378)
 - bypass the daemon() function in the init script and call initlog directly,
   because daemon() won't start a daemon it detects is already running (like
