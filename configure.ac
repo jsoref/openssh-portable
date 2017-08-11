@@ -2874,7 +2874,7 @@ LIBS="$saved_LIBS"
 
 ### Configure cryptographic random number support
 
-# Check wheter OpenSSL seeds itself
+# Check whether OpenSSL seeds itself
 if test "x$openssl" = "xyes" ; then
 	AC_MSG_CHECKING([whether OpenSSL's PRNG is internally seeded])
 	AC_RUN_IFELSE(
