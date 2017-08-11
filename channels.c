@@ -2213,7 +2213,7 @@ channel_output_poll(void)
  *      SSH_CHANNEL_MUX_PROXY channel and replace the mux clients ID
  *      with the newly allocated channel ID.
  * 2) Upstream messages are received by matching SSH_CHANNEL_MUX_PROXY
- *    channels and procesed by channel_proxy_upstream(). The local channel ID
+ *    channels and processed by channel_proxy_upstream(). The local channel ID
  *    is then translated back to the original mux client ID.
  * 3) In both cases we need to keep track of matching SSH2_MSG_CHANNEL_CLOSE
  *    messages so we can clean up SSH_CHANNEL_MUX_PROXY channels.
