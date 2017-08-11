@@ -53,7 +53,7 @@
 /* ---------------------------------------------------------------------- */
 
 #ifndef UMAC_OUTPUT_LEN
-#define UMAC_OUTPUT_LEN     8  /* Alowable: 4, 8, 12, 16                  */
+#define UMAC_OUTPUT_LEN     8  /* Allowable: 4, 8, 12, 16                 */
 #endif
 
 #if UMAC_OUTPUT_LEN != 4 && UMAC_OUTPUT_LEN != 8 && \
