@@ -757,7 +757,7 @@ check_authkeys_file(FILE *f, char *file, struct sshkey *key, struct passwd *pw)
 		char *cp, *key_options = NULL, *fp = NULL;
 		const char *reason = NULL;
 
-		/* Always consume entrire file */
+		/* Always consume entire file */
 		if (found_key)
 			continue;
 		if (found != NULL)
