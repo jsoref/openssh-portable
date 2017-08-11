@@ -585,7 +585,7 @@ ssh_packet_close_internal(struct ssh *ssh, int do_close)
 		state->newkeys[mode] = NULL;
 		ssh_clear_newkeys(ssh, mode);		/* next keys */
 	}
-	/* comression state is in shared mem, so we can only release it once */
+	/* compression state is in shared mem, so we can only release it once */
 	if (do_close && state->compression_buffer) {
 		sshbuf_free(state->compression_buffer);
 		if (state->compression_out_started) {
