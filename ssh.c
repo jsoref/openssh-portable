@@ -1392,7 +1392,7 @@ main(int ac, char **av)
 	/* load options.identity_files */
 	load_public_identity_files();
 
-	/* optionally set the SSH_AUTHSOCKET_ENV_NAME varibale */
+	/* optionally set the SSH_AUTHSOCKET_ENV_NAME variable */
 	if (options.identity_agent &&
 	    strcmp(options.identity_agent, SSH_AUTHSOCKET_ENV_NAME) != 0) {
 		if (strcmp(options.identity_agent, "none") == 0) {
