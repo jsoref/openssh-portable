@@ -717,7 +717,7 @@ fi
 
 * Mon Oct  2 2000 Nalin Dahyabhai <nalin@redhat.com>
 - Update x11-askpass to 1.0.2. (#17835)
-- Add BuildRequiress for /bin/login and /usr/bin/rsh so that configure will
+- Add BuildRequires for /bin/login and /usr/bin/rsh so that configure will
   always find them in the right place. (#17909)
 - Set the default path to be the same as the one supplied by /bin/login, but
   add /usr/X11R6/bin. (#17909)
