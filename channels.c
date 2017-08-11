@@ -2224,7 +2224,7 @@ channel_output_poll(void)
  *    channel. E.g. client_request_forwarded_tcpip() needs to figure
  *    out whether the request is addressed to the local client or a
  *    specific downstream client based on the listen-address/port.
- * 6) Agent and X11-Forwarding have a similar problem and are currenly
+ * 6) Agent and X11-Forwarding have a similar problem and are currently
  *    not supported as the matching session/channel cannot be identified
  *    easily.
  */
