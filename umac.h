@@ -59,7 +59,7 @@ struct umac_ctx *umac_new(const u_char key[]);
 
 #if 0
 int umac_reset(struct umac_ctx *ctx);
-/* Reset a umac_ctx to begin authenicating a new message */
+/* Reset a umac_ctx to begin authenticating a new message */
 #endif
 
 int umac_update(struct umac_ctx *ctx, const u_char *input, long len);
