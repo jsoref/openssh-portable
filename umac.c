@@ -319,7 +319,7 @@ static void pdf_gen_xor(pdf_ctx *pc, const UINT8 nonce[8], UINT8 buf[8])
 typedef struct {
     UINT8  nh_key [L1_KEY_LEN + L1_KEY_SHIFT * (STREAMS - 1)]; /* NH Key */
     UINT8  data   [HASH_BUF_BYTES];    /* Incoming data buffer           */
-    int next_data_empty;    /* Bookeeping variable for data buffer.       */
+    int next_data_empty;     /* Bookkeeping variable for data buffer.     */
     int bytes_hashed;        /* Bytes (out of L1_KEY_LEN) incorperated.   */
     UINT64 state[STREAMS];               /* on-line state     */
 } nh_ctx;
