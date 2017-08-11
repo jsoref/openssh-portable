@@ -59,7 +59,7 @@
 %define rescue 0
 %{?build_rescue:%define rescue 1}
 
-# Turn off some stuff for resuce builds
+# Turn off some stuff for rescue builds
 %if %{rescue}
 %define kerberos5 0
 %endif
