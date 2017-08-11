@@ -103,7 +103,7 @@ mm_log_handler(LogLevel level, const char *msg, void *ctx)
 	buffer_init(&log_msg);
 	/*
 	 * Placeholder for packet length. Will be filled in with the actual
-	 * packet length once the packet has been constucted. This saves
+	 * packet length once the packet has been constructed. This saves
 	 * fragile math.
 	 */
 	buffer_put_int(&log_msg, 0);
