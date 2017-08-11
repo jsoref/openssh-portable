@@ -107,7 +107,7 @@ int uhash_update(uhash_ctx_t ctx,
                long        len);
 
 int uhash_final(uhash_ctx_t ctx,
-              u_char        ouput[]);
+              u_char        output[]);
 
 int uhash(uhash_ctx_t ctx,
         u_char       *input,
