@@ -53,7 +53,7 @@ struct sshbuf {
 #ifndef SSHBUF_NO_DEPREACTED
 /*
  * NB. Please do not use sshbuf_init() in new code. Please use sshbuf_new()
- * instead. sshbuf_init() is deprectated and will go away soon (it is
+ * instead. sshbuf_init() is deprecated and will go away soon (it is
  * only included to allow compat with buffer_* in OpenSSH)
  */
 void sshbuf_init(struct sshbuf *buf);
@@ -325,7 +325,7 @@ u_int	sshbuf_refcount(const struct sshbuf *buf);
 
 # define SSHBUF_SIZE_INIT	256		/* Initial allocation */
 # define SSHBUF_SIZE_INC	256		/* Preferred increment length */
-# define SSHBUF_PACK_MIN	8192		/* Minimim packable offset */
+# define SSHBUF_PACK_MIN	8192		/* Minimum packable offset */
 
 /* # define SSHBUF_ABORT abort */
 /* # define SSHBUF_DEBUG */

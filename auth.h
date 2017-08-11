@@ -87,7 +87,7 @@ struct Authctxt {
 	struct sshkey	**prev_keys;
 	u_int		 nprev_keys;
 
-	/* Last used key and ancilliary information from active auth method */
+	/* Last used key and ancillary information from active auth method */
 	struct sshkey	*auth_method_key;
 	char		*auth_method_info;
 

@@ -83,7 +83,7 @@ int batchmode = 0;
 /* PID of ssh transport process */
 static pid_t sshpid = -1;
 
-/* Suppress diagnositic messages */
+/* Suppress diagnostic messages */
 int quiet = 0;
 
 /* This is set to 0 if the progressmeter is not desired. */
@@ -1838,7 +1838,7 @@ complete_cmd_parse(EditLine *el, char *cmd, int lastarg, char quote,
 		return 0;
 	}
 
-	/* Complete ambigious command */
+	/* Complete ambiguous command */
 	tmp = complete_ambiguous(cmd, list, count);
 	if (count > 1)
 		complete_display(list, 0);

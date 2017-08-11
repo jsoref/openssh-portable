@@ -17,7 +17,7 @@ if ! $OBJ/check-perm -m chroot "$CHROOT" ; then
   exit 0
 fi
 
-$SUDO sh -c "echo mekmitastdigoat > $PRIVDATA" || \
+$SUDO sh -c "echo mekmitasdigoat > $PRIVDATA" || \
 	fatal "create $PRIVDATA failed"
 
 start_sshd -oChrootDirectory=$CHROOT -oForceCommand="internal-sftp -d /"

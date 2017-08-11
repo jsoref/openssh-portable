@@ -16,7 +16,7 @@ that computes a 128 bit integrity tag given a message and a single-use
 The chacha20-poly1305@openssh.com combines these two primitives into an
 authenticated encryption mode. The construction used is based on that
 proposed for TLS by Adam Langley in [3], but differs in the layout of
-data passed to the MAC and in the addition of encyption of the packet
+data passed to the MAC and in the addition of encryption of the packet
 lengths.
 
 Negotiation
@@ -34,7 +34,7 @@ Detailed Construction
 The chacha20-poly1305@openssh.com cipher requires 512 bits of key
 material as output from the SSH key exchange. This forms two 256 bit
 keys (K_1 and K_2), used by two separate instances of chacha20.
-The first 256 bits consitute K_2 and the second 256 bits become
+The first 256 bits constitute K_2 and the second 256 bits become
 K_1.
 
 The instance keyed by K_1 is a stream cipher that is used only

@@ -1630,7 +1630,7 @@ monitor_apply_keystate(struct monitor *pmonitor)
 	}
 }
 
-/* This function requries careful sanity checking */
+/* This function requires careful sanity checking */
 
 void
 mm_get_keystate(struct monitor *pmonitor)

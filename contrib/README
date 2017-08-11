@@ -54,7 +54,7 @@ aix:
     Files to build an AIX native (installp or SMIT installable) package.
 
 caldera:
-    RPM spec file and scripts for building Caldera OpenLinuix packages
+    RPM spec file and scripts for building Caldera OpenLinux packages
 
 cygwin:
     Support files for Cygwin

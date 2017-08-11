@@ -117,7 +117,7 @@ aix_remove_embedded_newlines(char *p)
  *
  * Since authenticate() doesn't check AUTH1, and sshd can't sanely support
  * AUTH1 itself, in such a case authenticate() will allow access without
- * authentation, which is almost certainly not what the admin intends.
+ * authentication, which is almost certainly not what the admin intends.
  *
  * (The native tools, eg login, will process the AUTH1 list in addition to
  * the SYSTEM list by using ckuserID(), however ckuserID() and AUTH1 methods

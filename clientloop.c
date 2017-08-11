@@ -683,7 +683,7 @@ client_status_confirm(int type, Channel *c, void *ctx)
 	    options.request_tty == REQUEST_TTY_YES))
 		cr->action = CONFIRM_CLOSE;
 
-	/* XXX supress on mux _client_ quietmode */
+	/* XXX suppress on mux _client_ quietmode */
 	tochan = options.log_level >= SYSLOG_LEVEL_ERROR &&
 	    c->ctl_chan != -1 && c->extended_usage == CHAN_EXTENDED_WRITE;
 

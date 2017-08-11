@@ -448,7 +448,7 @@ case "$host" in
 	# Some versions of VAC won't allow macro redefinitions at
 	# -qlanglevel=ansi, and autoconf 2.60 sometimes insists on using that
 	# particularly with older versions of vac or xlc.
-	# It also throws errors about null macro argments, but these are
+	# It also throws errors about null macro arguments, but these are
 	# not fatal.
 	AC_MSG_CHECKING([if compiler allows macro redefinitions])
 	AC_COMPILE_IFELSE(
@@ -685,7 +685,7 @@ main() { if (NSVersionOfRunTimeLibrary("System") >= (60 << 16))
 	PATH="$PATH:/usr/etc"
 	AC_DEFINE([WITH_IRIX_ARRAY], [1],
 		[Define if you have/want arrays
-		(cluster-wide session managment, not C arrays)])
+		(cluster-wide session management, not C arrays)])
 	AC_DEFINE([WITH_IRIX_PROJECT], [1],
 		[Define if you want IRIX project management])
 	AC_DEFINE([WITH_IRIX_AUDIT], [1],
@@ -2674,7 +2674,7 @@ if test "x$openssl" = "xyes" ; then
 		],
 		[
 			AC_MSG_RESULT([no])
-			unsupported_algorithms="$unsupported_cipers \
+			unsupported_algorithms="$unsupported_ciphers \
 			   aes128-gcm@openssh.com \
 			   aes256-gcm@openssh.com"
 		]
@@ -2874,7 +2874,7 @@ LIBS="$saved_LIBS"
 
 ### Configure cryptographic random number support
 
-# Check wheter OpenSSL seeds itself
+# Check whether OpenSSL seeds itself
 if test "x$openssl" = "xyes" ; then
 	AC_MSG_CHECKING([whether OpenSSL's PRNG is internally seeded])
 	AC_RUN_IFELSE(
@@ -3756,7 +3756,7 @@ fi
 
 AC_CHECK_TYPES([struct timespec])
 
-# We need int64_t or else certian parts of the compile will fail.
+# We need int64_t or else certain parts of the compile will fail.
 if test "x$ac_cv_have_int64_t" = "xno" && \
 	test "x$ac_cv_sizeof_long_int" != "x8" && \
 	test "x$ac_cv_sizeof_long_long_int" = "x0" ; then
@@ -4330,7 +4330,7 @@ dnl # Otherwise we run a program to get the dir from system headers.
 dnl # We first look for _PATH_MAILDIR then MAILDIR then _PATH_MAIL
 dnl # If we find _PATH_MAILDIR we do nothing because that is what
 dnl # session.c expects anyway. Otherwise we set to the value found
-dnl # stripping any trailing slash. If for some strage reason our program
+dnl # stripping any trailing slash. If for some strange reason our program
 dnl # does not find what it needs, we default to /var/spool/mail.
 # Check for mail directory
 AC_ARG_WITH([maildir],

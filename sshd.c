@@ -1311,7 +1311,7 @@ server_accept_loop(int *sock_in, int *sock_out, int *newsock, int *config_s)
  * return an error if any are found).  Basically we are worried about
  * source routing; it can be used to pretend you are somebody
  * (ip-address) you are not. That itself may be "almost acceptable"
- * under certain circumstances, but rhosts autentication is useless
+ * under certain circumstances, but rhosts authentication is useless
  * if source routing is accepted. Notice also that if we just dropped
  * source routing here, the other side could use IP spoofing to do
  * rest of the interaction and could still bypass security.  So we

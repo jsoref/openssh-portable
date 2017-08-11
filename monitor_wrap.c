@@ -103,7 +103,7 @@ mm_log_handler(LogLevel level, const char *msg, void *ctx)
 	buffer_init(&log_msg);
 	/*
 	 * Placeholder for packet length. Will be filled in with the actual
-	 * packet length once the packet has been constucted. This saves
+	 * packet length once the packet has been constructed. This saves
 	 * fragile math.
 	 */
 	buffer_put_int(&log_msg, 0);
@@ -643,7 +643,7 @@ mm_sshpam_query(void *ctx, char **name, char **info,
 	sshpam_set_maxtries_reached(buffer_get_int(&m));
 	*num = buffer_get_int(&m);
 	if (*num > PAM_MAX_NUM_MSG)
-		fatal("%s: recieved %u PAM messages, expected <= %u",
+		fatal("%s: received %u PAM messages, expected <= %u",
 		    __func__, *num, PAM_MAX_NUM_MSG);
 	*prompts = xcalloc((*num + 1), sizeof(char *));
 	*echo_on = xcalloc((*num + 1), sizeof(u_int));

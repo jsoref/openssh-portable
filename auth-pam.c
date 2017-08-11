@@ -251,7 +251,7 @@ static char **
 pam_getenvlist(pam_handle_t *pamh)
 {
 	/*
-	 * XXX - If necessary, we can still support envrionment passing
+	 * XXX - If necessary, we can still support environment passing
 	 * for platforms without pam_getenvlist by searching for known
 	 * env vars (e.g. KRB5CCNAME) from the PAM environment.
 	 */
@@ -933,7 +933,7 @@ expose_authinfo(const char *caller)
 
 	/*
 	 * Expose authentication information to PAM.
-	 * The enviornment variable is versioned. Please increment the
+	 * The environment variable is versioned. Please increment the
 	 * version suffix if the format of session_info changes.
 	 */
 	if (sshpam_authctxt->session_info == NULL)

@@ -59,7 +59,7 @@
 %define rescue 0
 %{?build_rescue:%define rescue 1}
 
-# Turn off some stuff for resuce builds
+# Turn off some stuff for rescue builds
 %if %{rescue}
 %define kerberos5 0
 %endif
@@ -426,7 +426,7 @@ fi
 - Add new ssh-keysign program and remove setuid from ssh client
 
 * Fri May 10 2002 Damien Miller <djm@mindrot.org>
-- Merge in spec changes from RedHat, reorgansie a little
+- Merge in spec changes from RedHat, reorganize a little
 - Add Privsep user, group and directory
 
 * Thu Mar  7 2002 Nalin Dahyabhai <nalin@redhat.com> 3.1p1-2
@@ -571,7 +571,7 @@ fi
   races in condrestart
 
 * Mon Apr  2 2001 Nalin Dahyabhai <nalin@redhat.com>
-- mention that challengereponse supports PAM, so disabling password doesn't
+- mention that challengeresponse supports PAM, so disabling password doesn't
   limit users to pubkey and rsa auth (#34378)
 - bypass the daemon() function in the init script and call initlog directly,
   because daemon() won't start a daemon it detects is already running (like
@@ -717,7 +717,7 @@ fi
 
 * Mon Oct  2 2000 Nalin Dahyabhai <nalin@redhat.com>
 - Update x11-askpass to 1.0.2. (#17835)
-- Add BuildRequiress for /bin/login and /usr/bin/rsh so that configure will
+- Add BuildRequires for /bin/login and /usr/bin/rsh so that configure will
   always find them in the right place. (#17909)
 - Set the default path to be the same as the one supplied by /bin/login, but
   add /usr/X11R6/bin. (#17909)

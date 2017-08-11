@@ -53,7 +53,7 @@
 /* ---------------------------------------------------------------------- */
 
 #ifndef UMAC_OUTPUT_LEN
-#define UMAC_OUTPUT_LEN     8  /* Alowable: 4, 8, 12, 16                  */
+#define UMAC_OUTPUT_LEN     8  /* Allowable: 4, 8, 12, 16                 */
 #endif
 
 #if UMAC_OUTPUT_LEN != 4 && UMAC_OUTPUT_LEN != 8 && \
@@ -65,7 +65,7 @@
 /* #define AES_IMPLEMENTAION   1  1 = OpenSSL, 2 = Barreto, 3 = Gladman   */
 /* #define SSE2                0  Is SSE2 is available?                   */
 /* #define RUN_TESTS           0  Run basic correctness/speed tests       */
-/* #define UMAC_AE_SUPPORT     0  Enable auhthenticated encrytion         */
+/* #define UMAC_AE_SUPPORT     0  Enable authenticated encryption         */
 
 /* ---------------------------------------------------------------------- */
 /* -- Global Includes --------------------------------------------------- */
@@ -289,7 +289,7 @@ static void pdf_gen_xor(pdf_ctx *pc, const UINT8 nonce[8], UINT8 buf[8])
  * versions, one expects the entire message being hashed to be passed
  * in a single buffer and returns the hash result immediately. The second
  * allows the message to be passed in a sequence of buffers. In the          
- * muliple-buffer interface, the client calls the routine nh_update() as     
+ * multiple-buffer interface, the client calls the routine nh_update() as     
  * many times as necessary. When there is no more data to be fed to the   
  * hash, the client calls nh_final() which calculates the hash output.    
  * Before beginning another hash calculation the nh_reset() routine       
@@ -297,7 +297,7 @@ static void pdf_gen_xor(pdf_ctx *pc, const UINT8 nonce[8], UINT8 buf[8])
  * the sequence of calls nh_update() and nh_final(); however it is        
  * optimized and should be prefered whenever the multiple-buffer interface
  * is not necessary. When using either interface, it is the client's         
- * responsability to pass no more than L1_KEY_LEN bytes per hash result.            
+ * responsibility to pass no more than L1_KEY_LEN bytes per hash result.            
  *                                                                        
  * The routine nh_init() initializes the nh_ctx data structure and        
  * must be called once, before any other PDF routine.                     
@@ -319,8 +319,8 @@ static void pdf_gen_xor(pdf_ctx *pc, const UINT8 nonce[8], UINT8 buf[8])
 typedef struct {
     UINT8  nh_key [L1_KEY_LEN + L1_KEY_SHIFT * (STREAMS - 1)]; /* NH Key */
     UINT8  data   [HASH_BUF_BYTES];    /* Incoming data buffer           */
-    int next_data_empty;    /* Bookeeping variable for data buffer.       */
-    int bytes_hashed;        /* Bytes (out of L1_KEY_LEN) incorperated.   */
+    int next_data_empty;     /* Bookkeeping variable for data buffer.     */
+    int bytes_hashed;        /* Bytes (out of L1_KEY_LEN) incorporated.   */
     UINT64 state[STREAMS];               /* on-line state     */
 } nh_ctx;
 
@@ -851,7 +851,7 @@ static void poly_hash(uhash_ctx_t hc, UINT32 data_in[])
 
 
 /* The final step in UHASH is an inner-product hash. The poly hash
- * produces a result not neccesarily WORD_LEN bytes long. The inner-
+ * produces a result not necessarily WORD_LEN bytes long. The inner-
  * product hash breaks the polyhash output into 16-bit chunks and
  * multiplies each with a 36 bit key.
  */
@@ -1176,7 +1176,7 @@ static int uhash(uhash_ctx_t ahc, u_char *msg, long len, u_char *res)
 /* The UMAC interface has two interfaces, an all-at-once interface where
  * the entire message to be authenticated is passed to UMAC in one buffer,
  * and a sequential interface where the message is presented a little at a   
- * time. The all-at-once is more optimaized than the sequential version and
+ * time. The all-at-once is more optimized than the sequential version and
  * should be preferred when the sequential interface is not required. 
  */
 struct umac_ctx {

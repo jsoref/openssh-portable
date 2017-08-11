@@ -223,7 +223,7 @@ permanently_set_uid(struct passwd *pw)
 #ifdef __APPLE__
 	/*
 	 * OS X requires initgroups after setgid to opt back into
-	 * memberd support for >16 supplemental groups.
+	 * member support for >16 supplemental groups.
 	 */
 	if (initgroups(pw->pw_name, pw->pw_gid) < 0)
 		fatal("initgroups %.100s %u: %.100s",

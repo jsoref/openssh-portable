@@ -83,7 +83,7 @@ pkcs11_init(int interactive)
 }
 
 /*
- * finalize a provider shared libarary, it's no longer usable.
+ * finalize a provider shared library, it's no longer usable.
  * however, there might still be keys referencing this provider,
  * so the actuall freeing of memory is handled by pkcs11_provider_unref().
  * this is called when a provider gets unregistered.
@@ -582,7 +582,7 @@ pkcs11_add_provider(char *provider_id, char *pin, struct sshkey ***keyp)
 		    __func__, provider_id);
 		goto fail;
 	}
-	/* open shared pkcs11-libarary */
+	/* open shared pkcs11-library */
 	if ((handle = dlopen(provider_id, RTLD_NOW)) == NULL) {
 		error("dlopen %s failed: %s", provider_id, dlerror());
 		goto fail;

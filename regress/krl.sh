@@ -44,7 +44,7 @@ serial: 10000-20000
 serial: 30000-40000
 EOF
 
-# A specification that revokes some certificated by key ID.
+# A specification that revokes some certificate by key ID.
 touch $OBJ/revoked-keyid
 for n in 1 2 3 4 10 15 30 50 `jot 500 300` 999 1000 1001 1002; do
 	test "x$n" = "x499" && continue

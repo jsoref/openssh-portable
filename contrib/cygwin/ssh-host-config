@@ -22,7 +22,7 @@
 
 CSIH_SCRIPT=/usr/share/csih/cygwin-service-installation-helper.sh
 
-# List of apps used.  This is checkad for existance in csih_sanity_check
+# List of apps used.  This is checkad for existence in csih_sanity_check
 # Don't use *any* transient commands before sourcing the csih helper script,
 # otherwise the sanity checks are short-circuited.
 declare -a csih_required_commands=(
@@ -368,7 +368,7 @@ check_service_files_ownership() {
   then
     csih_warning "Couldn't change owner of important files to ${run_service_as}!"
     csih_warning "This may cause the sshd service to fail!  Please make sure that"
-    csih_warning "you have suufficient permissions to change the ownership of files"
+    csih_warning "you have sufficient permissions to change the ownership of files"
     csih_warning "and try to run the ssh-host-config script again."
   fi
   return $ret
