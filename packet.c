@@ -953,7 +953,7 @@ ssh_packet_need_rekeying(struct ssh *ssh, u_int outbound_packet_len)
 	    state->p_read.packets > MAX_PACKETS)
 		return 1;
 
-	/* Rekey after (cipher-specific) maxiumum blocks */
+	/* Rekey after (cipher-specific) maximum blocks */
 	out_blocks = ROUNDUP(outbound_packet_len,
 	    state->newkeys[MODE_OUT]->enc.block_size);
 	return (state->max_blocks_out &&
