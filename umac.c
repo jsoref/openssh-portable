@@ -1176,7 +1176,7 @@ static int uhash(uhash_ctx_t ahc, u_char *msg, long len, u_char *res)
 /* The UMAC interface has two interfaces, an all-at-once interface where
  * the entire message to be authenticated is passed to UMAC in one buffer,
  * and a sequential interface where the message is presented a little at a   
- * time. The all-at-once is more optimaized than the sequential version and
+ * time. The all-at-once is more optimized than the sequential version and
  * should be preferred when the sequential interface is not required. 
  */
 struct umac_ctx {
