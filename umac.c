@@ -297,7 +297,7 @@ static void pdf_gen_xor(pdf_ctx *pc, const UINT8 nonce[8], UINT8 buf[8])
  * the sequence of calls nh_update() and nh_final(); however it is        
  * optimized and should be prefered whenever the multiple-buffer interface
  * is not necessary. When using either interface, it is the client's         
- * responsability to pass no more than L1_KEY_LEN bytes per hash result.            
+ * responsibility to pass no more than L1_KEY_LEN bytes per hash result.            
  *                                                                        
  * The routine nh_init() initializes the nh_ctx data structure and        
  * must be called once, before any other PDF routine.                     
