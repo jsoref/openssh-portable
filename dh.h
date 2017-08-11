@@ -48,7 +48,7 @@ u_int	 dh_estimate(int);
 
 /*
  * Max value from RFC4419.
- * Miniumum increased in light of DH precomputation attacks.
+ * Minimum increased in light of DH precomputation attacks.
  */
 #define DH_GRP_MIN	2048
 #define DH_GRP_MAX	8192
