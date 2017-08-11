@@ -300,7 +300,7 @@ do_cmd(char *host, char *remuser, char *cmd, int *fdin, int *fdout)
 }
 
 /*
- * This functions executes a command simlar to do_cmd(), but expects the
+ * This functions executes a command similar to do_cmd(), but expects the
  * input and output descriptors to be setup by a previous call to do_cmd().
  * This way the input and output of two commands can be connected.
  */
