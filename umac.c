@@ -320,7 +320,7 @@ typedef struct {
     UINT8  nh_key [L1_KEY_LEN + L1_KEY_SHIFT * (STREAMS - 1)]; /* NH Key */
     UINT8  data   [HASH_BUF_BYTES];    /* Incoming data buffer           */
     int next_data_empty;     /* Bookkeeping variable for data buffer.     */
-    int bytes_hashed;        /* Bytes (out of L1_KEY_LEN) incorperated.   */
+    int bytes_hashed;        /* Bytes (out of L1_KEY_LEN) incorporated.   */
     UINT64 state[STREAMS];               /* on-line state     */
 } nh_ctx;
 
