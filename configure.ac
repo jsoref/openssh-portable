@@ -4330,7 +4330,7 @@ dnl # Otherwise we run a program to get the dir from system headers.
 dnl # We first look for _PATH_MAILDIR then MAILDIR then _PATH_MAIL
 dnl # If we find _PATH_MAILDIR we do nothing because that is what
 dnl # session.c expects anyway. Otherwise we set to the value found
-dnl # stripping any trailing slash. If for some strage reason our program
+dnl # stripping any trailing slash. If for some strange reason our program
 dnl # does not find what it needs, we default to /var/spool/mail.
 # Check for mail directory
 AC_ARG_WITH([maildir],
